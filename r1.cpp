@@ -13,11 +13,13 @@ class result{
         cin>>sci;
         cout<<"enter the eng marks:";
         cin>>eng;
+        
     }
     void cal()
     {
         total=maths+sci+eng;
-        per=total/3;
+        per=(float)total/3;
+       
     }
     void display()
     {

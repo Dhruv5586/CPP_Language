@@ -17,7 +17,7 @@ class result{
     void cal()
     {
         total=maths+sci+eng;
-        per=total/3;
+        per=(float)total/3;
     }
     void display()
     {
