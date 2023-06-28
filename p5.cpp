@@ -4,11 +4,12 @@ class book
 {
     int bookno;
     char booktitle[20];
-    float price;
-    float n;
-    total_cost();
+    float price,value;
+   float total_cost(int x)
     {
-        return (price*n);
+        float total;
+        total=price*x;
+        return total;
     }
     public:
     void input()
@@ -19,16 +20,16 @@ class book
         cin>>booktitle;
         cout<<"enter the price:";
         cin>>price;
-        cout<<"enter the n:";
-        cin>>n;
-        total_cost();
+        
     }
     void purchase()
     {
-        cout<<" enter the no:"<<bookno<<endl;
-         cout<<"enter the title :"<<booktitle<<endl;
-           cout<<"enter the price:"<<price<<endl;
-           cout<<" enetr the n:"<<n<<endl;
+        int n;
+        cout<<"enter the copies:";
+        cin>>n;
+        float total;
+        total=total_cost(n);
+        cout<<"your total cost: "<<total;
     }
     };
     int main()

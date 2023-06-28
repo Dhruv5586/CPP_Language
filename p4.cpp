@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
 class flight{
-    int flight no;
+    int flight;
     char destination[30];
     float distance;
-    float fuel,price;
+    float fuel;
     float calfuel()
     {
         if(distance<=1000)
@@ -20,23 +20,24 @@ class flight{
             fuel=2200;
         }
     }
+    public:
     void feedinfo()
     {
         cout<<"enetr the flight num:";
-        cin>>flight no;
+        cin>>flight;
         cout<<"enetr the destination:";
         cin>>destination;
         cout<<"enetr the distance:";
         cin>>distance;
-        price=calfuel();
+        calfuel();
 
     }
     void showinfo()
     {
-        cout<<" enter the  flight num:"<< flight num<<endl;
+        cout<<" enter the  flight num:"<< flight<<endl;
          cout<<"enter the destination :"<<destination<<endl;
            cout<<"enter the distance:"<<distance<<endl;
-           cout<<"price:"<<price<<endl;
+           cout<<"fuel:"<<fuel<<endl;
     }
 };
 int main()
