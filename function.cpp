@@ -18,7 +18,7 @@ class volume{
         cout<<"sphere volume:"<<(1.33)*3.14*(a*a*a)<<endl;
     }
      double vol(int a,int b,double c)
-    {
+    {                                         
         cout<<"elliposid volume:"<<(1.33)*3.14*a*b*c<<endl;
     }
 };
