@@ -1,16 +1,7 @@
-#include<iostream>
-using namespace std;
-class test{
-public:
-void setdata(int a)
-{
-    cout<<"cube volume a:";
-    cin>>a;
+
+
 }
-};
-int main()
+for(i=0;i<2;i++)
 {
-    test t;
-    t.setdata();
-    cout <<"volume:"<<a*a*a<<endl;
-}
+    a[i].cal();
+    
